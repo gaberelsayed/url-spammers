@@ -22,7 +22,7 @@ tokens.forEach(token => {
         if (durum) { URL(); }
         console.log(`${client.guilds.cache.get(options.GuildID).name} adlı sunucuda ${options.url} urlsi spamlanmaya başlandı`)
         setInterval(() => {
-            if (durum) { URL(); }
+            if (durum) { URL(); }                   
             let sunucu = client.guilds.cache.get(options.GuildID);
             if (sunucu.vanityURLCode === options.url) {
                 client.channels.cache.get(options.log).send(`@everyone ${sunucu.name} adlı sunucunun url si çalınmıştır!`)
